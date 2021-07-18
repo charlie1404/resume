@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @page {
+      margin: 20px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: auto;
+      width: 8.5in;
+      margin: 0 auto;
+    }
+    header {
+      padding: 40px 0;
+      background-color: #3c5769;
+      color: white;
+    }
+    header h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+    header p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 15px;
+      text-align: center;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .no-italic {
+      font-style: normal;
+    }
+    .content {
+      display: flex;
+      height: calc(100% - 171px);
+    }
+    .content > section {
+      width: 65%;
+      padding: 20px;
+    }
+    .content > aside {
+      width: 35%;
+      padding: 15px;
+      background-color: #f5f5f5;
+    }
+    .content > section h2,
+    .content > aside h2 {
+      font-family: 'Garamond';
+      font-size: 18px;
+    }
+    .job-exp {
+      margin-top: 20px;
+    }
+    .job-exp i.fa {
+      font-size: 14px;
+      display: inline-flex;
+      width: 16px;
+      justify-content: center;
+    }
+    .job-exp .date {
+      margin-top: 5px;
+    }
+    .job-exp ul {
+      padding-inline-start: 30px;
+      padding-top: 4px;
+    }
+    .job-exp ul li {
+      text-align: justify;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+    .job-exp ul li a {
+      text-decoration: none;
+    }
+    .aside-info {
+      margin-top: 15px;
+    }
+    .aside-info .heading {
+      font-size: 15px;
+    }
+    .aside-info .info {
+      padding-inline-start: 15px;
+      padding-top: 5px;
+      font-size: 13px;
+    }
+    .aside-info .duration {
+      font-size: 13px;
+      font-style: italic;
+    }
+    .aside-info .social-info {
+      padding-top: 5px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .social-info i.fa {
+      padding-inline-start: 10px;
+      font-size: 14px;
+      display: inline-flex;
+      width: 16px;
+      justify-content: center;
+    }
+    .social-info a {
+      text-decoration: none;
+    }
+    .sep {
+      background-color: #c4c4c4;
+      border: none;
+      height: 1px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="name">
+      Shailendra Gupta
+    </h1>
+    <p>
+      <i class="fa fa-phone-square"></i>
+      &nbsp;(91) 960-242-5641
+      &nbsp;&nbsp;<span class="bold">|</span>&nbsp;&nbsp;
+      <i class="fa fa-envelope"></i>
+      &nbsp;gup.sg14@gmail.com
+      &nbsp;&nbsp;<span class="bold">|</span>&nbsp;&nbsp;
+      <i class="fa fa-map-marker"></i>
+      &nbsp;Jaipur, Rajasthan
+    </p>
+  </header>
+  <div class="content">
+    <section>
+      <h2 class="italic">Work Experience</h2>
+      <article class="job-exp">
+        <p class="bold">Vimeo Technologies</p>
+        <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> 17-03-2021 — Current</p>
+        <ul>
+          <li>Part of partnerships team. Worked on Integration of vimeo create to various partners.</li>
+          <li>Worked on tagging of videos pipeline before downloads.</li>
+        </ul>
+      </article>
+      <article class="job-exp">
+        <p class="bold">Paytm Insider | Software Engineer</p>
+        <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> 11-01-2021 — 12-03-2021</p>
+        <ul>
+          <li>Part of core team, consumer pod (aka, main site insider.in)</li>
+        </ul>
+      </article>
+      <article class="job-exp">
+        <p class="bold">Peak.ai | Software Engineer</p>
+        <p class="date italic"><i class="fa fa-map-marker"></i> Jaipur, Rajasthan</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> 01-08-2018 — 08-01-2021</p>
+        <ul>
+          <li>Worked on user management, notification, workflows, authentication, and RBAC (role-based access control) services</li>
+          <li>Developed APIs for frontend app and micro-services communications.</li>
+          <li>Implemented data fetching connectors through FTP/SFTP.</li>
+          <li>Developed react-redux architectured application.</li>
+          <li>Integration of BI tool (sisense) in frontend application.</li>
+          <li>Used various AWS services like lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, SQS for developing application modules</li>
+          <li>Optimized front-end delivery, by code splitting, and implementing better-caching strategy (edge caching and object expiration).</li>
+          <li>Developed a separate component library, for moving presentational components out of the business application.</li>
+          <li>Built automated data fetching pipeline from mintuk.bvdinfo.com and google big query.</li>
+        </ul>
+      </article>
+      <!-- <article class="job-exp">
+        <p class="bold">Peak.ai | Software Intern</p>
+        <p class="date italic"><i class="fa fa-map-marker"></i> Jaipur, Rajasthan</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> 01-05-2018 — 31-06-2018</p>
+        <ul>
+          <li>Worked on various AWS services like lambda, DynamoDB, API Gateway, S3, Fargate</li>
+        </ul>
+      </article> -->
+      <br>
+      <article class="job-exp">
+        <p class="bold">Open Source Contribution</p>
+        <ul>
+          <li>Made Small <a href="https://github.com/facebook/react/pull/19054">contribution</a> to react.</li>
+          <li><a href="https://github.com/peak-ai/flashr">Flashr</a> for notifications management in redux based applications.</li>
+        </ul>
+      </article>
+      <article class="job-exp">
+        <p class="bold">Professional Certificate</p>
+        <ul>
+          <li>AWS Developer Associate (PWYQS9G1MFE11RSL) Issued on Aug 12, 2019</li>
+        </ul>
+      </article>
+      <article class="job-exp">
+        <p class="bold">Honors and Awards</p>
+        <ul>
+          <li>Peak Value Award (2 times)</li>
+          <li>Deloitte Innovation Award, Smart India Hackathon 2017</li>
+        </ul>
+      </article>
+    </section>
+    <aside>
+      <h2 class="italic">Technical Skills</h2>
+      <article class="aside-info">
+        <p class="heading">Experienced <span class="bold">:</span></p>
+        <p class="info">
+          React
+          <span class="no-italic">|</span>
+          Redux
+          <span class="no-italic">|</span>
+          NodeJS
+          <span class="no-italic">|</span>
+          ExpressJS
+          <span class="no-italic">|</span>
+          Javascript
+          <span class="no-italic">|</span>
+          AWS&nbsp;S3
+          <span class="no-italic">|</span>
+          AWS&nbsp;Lambda
+          <span class="no-italic">|</span>
+          AWS&nbsp;DynamoDB
+          <span class="no-italic">|</span>
+          API&nbsp;Gateway
+        </p>
+      </article>
+      <article class="aside-info">
+        <p class="heading">Hands-On <span class="bold">:</span></p>
+        <p class="info">
+          CloudFormation (IAC)
+          <span class="no-italic">|</span>
+          AWS&nbsp;SNS
+          <span class="no-italic">|</span>
+          Microservice&nbsp;Infra
+          <span class="no-italic">|</span>
+          AWS&nbsp;SQS
+          <span class="no-italic">|</span>
+          Serverless&nbsp;Computing
+        </p>
+      </article>
+      <article class="aside-info">
+        <p class="heading">Relevant Courses <span class="bold">:</span></p>
+        <p class="info">
+          Data&nbsp;Structures&nbsp;&amp;&nbsp;Algorithms
+          <span class="no-italic">|</span>
+          Design&nbsp;&amp;&nbsp;Analysis&nbsp;of&nbsp;Algorithms
+          <span class="no-italic">|</span>
+          Operating&nbsp;System
+          <span class="no-italic">|</span>
+          UNIX&nbsp;Programming
+          <span class="no-italic">|</span>
+          Computer&nbsp;Networks
+          <span class="no-italic">|</span>
+          Databases
+        </p>
+      </article>
+      <hr class="sep" />
+      <h2 class="italic">Education</h2>
+      <article class="aside-info">
+        <p class="heading">
+          B. Tech
+          <span class="duration">(2015 - Dropped in final year)</span>
+        </p>
+        <p class="info">Global Institute of Technology (RTU)</p>
+      </article>
+      <article class="aside-info">
+        <p class="heading">
+          Senior Secondary
+          <span class="duration">(2012 - 2014)</span>
+        </p>
+        <p class="info">Rawat Public School (CBSE)</p>
+      </article>
+      <article class="aside-info">
+        <p class="heading">
+          Secondary
+          <span class="duration">(2010 - 2012)</span>
+        </p>
+        <p class="info">Rawat Public School (CBSE)</p>
+      </article>
+      <hr class="sep" />
+      <h2 class="italic">Social Links</h2>
+      <article class="aside-info">
+        <p class="social-info">
+          <i class="fa fa-github"></i> <a href="https://github.com/charlie1404">charlie1404</a>
+        </p>
+        <p class="social-info">
+          <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/charlie1404">charlie1404</a>
+        </p>
+        <p class="social-info">
+          <i class="fa fa-twitter"></i> <a href="https://twitter.com/charlie1404_sg">charlie1404_sg</a>
+        </p>
+      </article>
+    </aside>
+  </div>
+</body>
+</html>
