@@ -15,8 +15,8 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      height: auto;
-      width: 8.5in;
+      height: 297mm;
+      width: 210mm;
       margin: 0 auto;
     }
     header {
@@ -45,11 +45,11 @@
     }
     .content {
       display: flex;
-      height: calc(100% - 171px);
+      height: calc(100vh - 171px);
     }
     .content > section {
       width: 65%;
-      padding: 20px;
+      padding: 0 20px;
     }
     .content > aside {
       width: 35%;
@@ -130,7 +130,7 @@
     </h1>
     <p>
       <i class="fa fa-phone-square"></i>
-      &nbsp;(91) 960-242-5641
+      &nbsp;+91 9602425641
       &nbsp;&nbsp;<span class="bold">|</span>&nbsp;&nbsp;
       <i class="fa fa-envelope"></i>
       &nbsp;gup.sg14@gmail.com
@@ -141,33 +141,34 @@
   </header>
   <div class="content">
     <section>
-      <h2 class="italic">Work Experience</h2>
       <article class="job-exp">
         <p class="bold">Vimeo Technologies</p>
         <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
-        <p class="date italic"><i class="fa fa-calendar"></i> 17-03-2021 — Current</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> March, 2021 — Current</p>
         <ul>
-          <li>Part of partnerships team. Worked on Integration of vimeo create to various partners.</li>
+          <li>Part of partnerships team. Worked on Integration of vimeo create for various partners like constant contacts and facebook.</li>
           <li>Identified and fix the routing issues in internal framework.</li>
           <li>Change in code generation scripts for routing files.</li>
-          <li>Worked on tagging of videos pipeline before downloads.</li>
+          <li>Created and owned video tagging pipeline (pre downloads service).</li>
+          <li>Fixed multiple issues in SDK for vimeo create integration.</li>
+          <li>Worked on authentication, app capablities and session with cookies and JWT interoperability, for 3rd party cookies blocked use cases.</li>
         </ul>
       </article>
-      <article class="job-exp">
+      <!-- <article class="job-exp">
         <p class="bold">Paytm Insider | Software Engineer</p>
         <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
         <p class="date italic"><i class="fa fa-calendar"></i> 11-01-2021 — 12-03-2021</p>
         <ul>
           <li>Part of core team, consumer pod (aka, main site insider.in)</li>
         </ul>
-      </article>
+      </article> -->
       <article class="job-exp">
         <p class="bold">Peak.ai | Software Engineer</p>
         <p class="date italic"><i class="fa fa-map-marker"></i> Jaipur, Rajasthan</p>
-        <p class="date italic"><i class="fa fa-calendar"></i> 01-08-2018 — 08-01-2021</p>
+        <p class="date italic"><i class="fa fa-calendar"></i> Aug, 2018 — Jan, 2021</p>
         <ul>
           <li>Worked on user management, notification, workflows, authentication, and RBAC (role-based access control) services</li>
-          <li>Developed APIs for frontend app and micro-services communications.</li>
+          <li>Developed TCP layer proxy for lambda and PostgreSQL communication without persistent connection.</li>
           <li>Implemented data fetching connectors through FTP/SFTP.</li>
           <li>Developed react-redux architectured application.</li>
           <li>Integration of BI tool (sisense) in frontend application.</li>
