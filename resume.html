@@ -12,11 +12,15 @@
     }
     body {
       width: 210mm;
+      height: calc(297mm - 1px);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       margin: 0 auto;
     }
+    header, aside {
+      box-sizing: border-box;
+    }
     header {
-      padding: 40px 0;
+      padding: 25px 0;
       background-color: #3c5769;
       color: white;
     }
@@ -27,7 +31,7 @@
     header p {
       font-size: 16px;
       line-height: 20px;
-      margin-top: 15px;
+      margin-top: 14px;
       text-align: center;
     }
     .bold {
@@ -41,7 +45,7 @@
     }
     .content {
       display: flex;
-      height: calc(100vh - 171px);
+      height: calc(100% - 140px);
     }
     .content > section {
       width: 65%;
@@ -58,7 +62,7 @@
       font-size: 18px;
     }
     .job-exp {
-      margin-top: 20px;
+      margin-top: 15px;
     }
     .job-exp i.fa {
       font-size: 14px;
@@ -82,13 +86,13 @@
       text-decoration: none;
     }
     .aside-info {
-      margin-top: 15px;
+      margin-top: 10px;
     }
     .aside-info .heading {
       font-size: 15px;
     }
     .aside-info .info {
-      padding-inline-start: 15px;
+      padding-inline-start: 10px;
       padding-top: 5px;
       font-size: 13px;
     }
@@ -115,7 +119,7 @@
       background-color: #c4c4c4;
       border: none;
       height: 1px;
-      margin: 20px 0;
+      margin: 15px 0;
     }
   </style>
 </head>
@@ -126,11 +130,11 @@
     </h1>
     <p>
       <i class="fa fa-phone-square"></i>
-      &nbsp;+91 9602425641
-      &nbsp;&nbsp;<span class="bold">|</span>&nbsp;&nbsp;
+      &nbsp;+91 9602425641&nbsp;&nbsp;
+      <span class="bold">|&nbsp;&nbsp;</span>
       <i class="fa fa-envelope"></i>
-      &nbsp;gup.sg14@gmail.com
-      &nbsp;&nbsp;<span class="bold">|</span>&nbsp;&nbsp;
+      &nbsp;gup.sg14@gmail.com&nbsp;&nbsp;
+      <span class="bold">|&nbsp;&nbsp;</span>
       <i class="fa fa-map-marker"></i>
       &nbsp;Jaipur, Rajasthan
     </p>
@@ -138,7 +142,7 @@
   <div class="content">
     <section>
       <article class="job-exp">
-        <p class="bold">Vimeo Technologies</p>
+        <p class="bold">Vimeo Technologies | Software Engineer</p>
         <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
         <p class="date italic"><i class="fa fa-calendar"></i> March, 2021 — Current</p>
         <ul>
@@ -150,14 +154,6 @@
           <li>Worked on authentication, app capabilities, and session for cookies&nbsp;|&nbsp;JWT interoperability for 3rd party cookies blocked use cases.</li>
         </ul>
       </article>
-      <!-- <article class="job-exp">
-        <p class="bold">Paytm Insider | Software Engineer</p>
-        <p class="date italic"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
-        <p class="date italic"><i class="fa fa-calendar"></i> 11-01-2021 — 12-03-2021</p>
-        <ul>
-          <li>Part of core team, consumer pod (aka, main site insider.in)</li>
-        </ul>
-      </article> -->
       <article class="job-exp">
         <p class="bold">Peak.ai | Software Engineer</p>
         <p class="date italic"><i class="fa fa-map-marker"></i> Jaipur, Rajasthan</p>
