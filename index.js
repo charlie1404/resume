@@ -6,7 +6,7 @@ let server = null;
 let browser = null;
 
 async function run() {
-  const outputFilePath = './dist/resume.pdf';
+  const outputFilePath = './resume.pdf';
 
   core.info('Starting vite server!!');
 
