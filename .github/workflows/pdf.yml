@@ -27,7 +27,7 @@ jobs:
 
       - name: Install node-modules
         working-directory: ./
-        run: npm install --no-package-lock --production
+        run: npm install --no-package-lock
 
       - name: Build PDF
         working-directory: ./
