@@ -1,14 +1,8 @@
 name: Generate PDF
 
-on: [push]
-
-# on:
-#   push:
-#     branches: ["master"]
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+on:
+  push:
+    branches: ["master"]
 
 jobs:
   Generate-PDF:
@@ -17,15 +11,15 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: |
-            ./node_modules
-            ~/.cache/puppeteer
-          key: ${{ runner.os }}
-          restore-keys: |
-            ${{ runner.os }}
+      # - name: Cache node modules
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: |
+      #       ./node_modules
+      #       ~/.cache/puppeteer
+      #     key: ${{ runner.os }}
+      #     restore-keys: |
+      #       ${{ runner.os }}
 
       - name: Install node-modules
         working-directory: ./

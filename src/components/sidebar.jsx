@@ -3,8 +3,10 @@ import styled from '@emotion/styled';
 const Sidebar = styled.aside`
   width: 265px;
   padding: 15px;
+  padding-bottom: 0;
   background-color: #f5f5f5;
-  height: calc(360mm - 140px);
+  /* height: calc(362mm - 141px); */
+  height: calc(297mm - 141px);
 `;
 
 const SidebarTitle = styled.h2`
@@ -44,14 +46,24 @@ const Certifications = (
   </>
 );
 
+const OSSContributionsHref = styled.a`
+  color: #0000ee;
+  font-style: italic;
+`;
+
 const OSSContributions = (
   <>
     <SidebarTitle>OSS Contributions</SidebarTitle>
     <SidebarInfo>
-      - <a href="https://github.com/facebook/react/pull/19054">Contribution</a> to react
+      -{' '}
+      <OSSContributionsHref href="https://github.com/facebook/react/pull/19054">
+        Contribution
+      </OSSContributionsHref>{' '}
+      to react
     </SidebarInfo>
     <SidebarInfo>
-      - <a href="https://github.com/peak-ai/flashr">Flashr</a> notifications queue for redux.
+      - <OSSContributionsHref href="https://github.com/peak-ai/flashr">Flashr</OSSContributionsHref>{' '}
+      notifications queue for redux.
     </SidebarInfo>
   </>
 );
@@ -124,7 +136,7 @@ const HonorsAndAwards = (
 
 const SocialLinkHref = styled.a`
   text-decoration: none;
-  color: rgb(85, 26, 139);
+  color: #0000ee;
   font-style: italic;
   padding-top: 6px;
   display: block;

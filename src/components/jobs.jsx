@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+import logos from './logos';
 import jobsData from '../data.json';
 
 const StyledSection = styled.section`
@@ -16,7 +17,10 @@ const JobExpArticle = styled.article`
   }
 `;
 
-const Title = styled.p``;
+const Title = styled.p`
+  display: flex;
+  align-items: center;
+`;
 
 const Position = styled.span`
   font-weight: bold;
@@ -34,8 +38,9 @@ const Duration = styled.p`
 
 const CompanyHref = styled.a`
   text-decoration: none;
-  color: rgb(85, 26, 139);
+  color: #0000ee;
   font-style: italic;
+  font-size: 15px;
 `;
 
 const DescUnOrderedList = styled.ul`
@@ -49,11 +54,12 @@ const DescUnOrderedList = styled.ul`
   }
 `;
 
-function JobSection({ position, company, website, location, from, to, desc }) {
+function JobSection({ jobName, position, company, website, location, from, to, desc }) {
   return (
     <JobExpArticle>
       <Title>
-        <Position>{position}</Position> | <CompanyHref href={website}>{company}</CompanyHref>
+        <Position>{position}</Position>&nbsp;|&nbsp;
+        <CompanyHref href={website}>{company}</CompanyHref>&nbsp;{logos[jobName]}
       </Title>
       <Location>
         <i className="fa fa-map-marker" /> {location}
@@ -76,6 +82,7 @@ function Jobs() {
       {jobsData.map((e) => (
         <JobSection
           key={e.jobName}
+          jobName={e.jobName}
           position={e.position}
           company={e.company}
           website={e.website}

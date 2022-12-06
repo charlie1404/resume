@@ -19,8 +19,10 @@ const globalStyles = css`
     padding: 0;
   }
   body {
-    width: 220mm;
-    height: 360mm;
+    /* width: 220mm;
+    height: 362mm; */
+    width: 210mm;
+    height: 297mm;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;

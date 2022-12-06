@@ -23,9 +23,11 @@ async function run() {
   core.info('Starting generating PDF!!');
   await page.pdf({
     path: outputFilePath,
-    format: 'Legal',
+    // format: 'Legal',
+    format: 'A4',
     margin: { top: '0', left: '0', right: '0', bottom: '0' },
     printBackground: true,
+    pageRanges: '1',
   });
 
   core.info('PDF generation complete!!');
