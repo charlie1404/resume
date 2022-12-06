@@ -1,6 +1,21 @@
 {
+  "name": "resume",
+  "scripts": {
+    "dev": "vite"
+  },
   "dependencies": {
-    "@actions/core": "^1.9.0",
-    "puppeteer": "^15.3.0"
+    "@emotion/css": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.10.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^2.2.0",
+    "puppeteer": "^19.3.0",
+    "vite": "^3.2.5"
   }
 }

@@ -1,0 +1,51 @@
+[
+  {
+    "jobName": "razorpay",
+    "position": "Senior Software Engineer",
+    "company": "Razorpay",
+    "website": "https://razorpay.com/",
+    "location": "Bengaluru, Karnataka",
+    "from": "Nov, 2021",
+    "to": "Current",
+    "desc": [
+      "Part of partnerships team, where contributed on partnerships program from Razorpay.",
+      "Run a few successfull migrations for critical operations."
+    ]
+  },
+  {
+    "jobName": "vimeo",
+    "position": "Software Engineer",
+    "company": "Vimeo",
+    "website": "https://vimeo.com/",
+    "location": "Bengaluru, Karnataka",
+    "from": "March, 2021",
+    "to": "Nov, 2021",
+    "desc": [
+      "Part of partnerships team, where worked on Integration of Vimeo-Create for various partners like ConstantContacts and Facebook.",
+      "Identified and fix the routing issues in the internal framework.",
+      "Change in code generation scripts for routing files.",
+      "Developed video tagging pipeline (pre downloads service).",
+      "Fixed multiple issues in SDK for Vimeo-Create integration, like overlay and post message communication.",
+      "Worked on authentication, app capabilities, and session for cookies, JWT interoperability for 3rd party cookies blocked use cases."
+    ]
+  },
+  {
+    "jobName": "peak",
+    "position": "Software Engineer",
+    "company": "Peak.ai",
+    "website": "https://peak.ai/",
+    "location": "Jaipur, Rajasthan",
+    "from": "Aug, 2018",
+    "to": "Jan, 2021",
+    "desc": [
+      "Worked on user management, notification, workflows, authentication, and RBAC (role-based access control) services.",
+      "Developed a TCP layer proxy for AWS Lambda and PostgreSQL communication with no persistent connection.",
+      "Implemented data fetching connectors through FTP/SFTP.",
+      "Integrated Sisnese (BI tool) in frontend application.",
+      "Used multiple AWS services like Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, SQS for developing application modules.",
+      "Optimized frontend delivery by code-splitting and a implementing a better caching strategy (edge caching and object expiration).",
+      "Developed a component library from scratch for moving presentational components out of the business application.",
+      "Built automated data fetching pipeline from mintuk.bvdinfo.com and google big query."
+    ]
+  }
+]
