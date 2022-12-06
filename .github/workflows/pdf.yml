@@ -1,10 +1,10 @@
 name: Generate PDF
 
-on: [push]
+# on: [push]
 
-# on:
-#   push:
-#     branches: ["master"]
+on:
+  push:
+    branches: ["master"]
 
 concurrency:
   group: "pages"
