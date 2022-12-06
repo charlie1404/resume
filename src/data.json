@@ -1,0 +1,53 @@
+[
+  {
+    "jobName": "razorpay",
+    "position": "Senior Software Engineer (Backend)",
+    "company": "Razorpay",
+    "website": "https://razorpay.com/",
+    "location": "Bengaluru, Karnataka",
+    "from": "Nov, 2021",
+    "to": "Current",
+    "desc": [
+      "Developed solutions for partnership modules, including commission calculation and tracking.",
+      "Implemented various payment products, including QR codes, Smart Collect, subscriptions, and payment links, to generate commissions.",
+      "Executed successful migrations of critical operations without interruption of service, such as user roles migration.",
+      "Managed P2 incident from start to finish, including triage and incident report generation."
+    ]
+  },
+  {
+    "jobName": "vimeo",
+    "position": "Software Engineer (Full Stack)",
+    "company": "Vimeo",
+    "website": "https://vimeo.com/",
+    "location": "Bengaluru, Karnataka",
+    "from": "March, 2021",
+    "to": "Nov, 2021",
+    "desc": [
+      "Created a video tagging pipeline (pre-download service) to dynamically add metadata to MP4 files.",
+      "Integrated Vimeo-Create with partners such as ConstantContacts and Facebook.",
+      "Identified and resolved routing issues in internal framework.",
+      "Modified code generation scripts for routing files.",
+      "Fixed several issues in Vimeo-Create integration SDK, including overlays and post-message communication.",
+      "Developed authentication, app capabilities, and session handling for cookies, including support for JWT interoperability in cases where 3rd party cookies are blocked."
+    ]
+  },
+  {
+    "jobName": "peak",
+    "position": "Software Engineer (Full Stack)",
+    "company": "Peak.ai",
+    "website": "https://peak.ai/",
+    "location": "Jaipur, Rajasthan",
+    "from": "Aug, 2018",
+    "to": "Jan, 2021",
+    "desc": [
+      "Good experience in managing crucial services such as user management, notification, workflows, authentication, and RBAC (role-based access control) services.",
+      "Created a TCP layer proxy for AWS Lambda and PostgreSQL communication without a persistent connection.",
+      "Developed connectors for data fetching through FTP/SFTP.",
+      "Integrated Sisnese (BI tool) into the frontend application.",
+      "Utilized various AWS services, including Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, and SQS for application module development.",
+      "Improved frontend delivery through code-splitting and implementing a more effective caching strategy (edge caching and object expiration).",
+      "Developed a custom component library to move presentational components out of the business application.",
+      "Built an automated data fetching pipeline from mintuk.bvdinfo.com and Google Big Query."
+    ]
+  }
+]
