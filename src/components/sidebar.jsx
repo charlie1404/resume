@@ -5,8 +5,7 @@ const Sidebar = styled.aside`
   padding: 15px;
   padding-bottom: 0;
   background-color: #f5f5f5;
-  /* height: calc(362mm - 141px); */
-  height: calc(297mm - 141px);
+  height: calc(297mm - 130px);
 `;
 
 const SidebarTitle = styled.h2`
@@ -26,6 +25,24 @@ const SidebarInfo = styled.p`
   font-size: 13px;
 `;
 
+const SidebarHypenList = styled.ul`
+  padding-inline-start: 10px;
+  list-style: none;
+
+  & a {
+    color: #0000ee;
+    font-style: italic;
+  }
+
+  & li {
+    padding-top: 5px;
+    font-size: 13px;
+    &:before {
+      content: '- ';
+    }
+  }
+`;
+
 const EducationDuration = styled.span`
   font-size: 13px;
   font-style: italic;
@@ -38,33 +55,48 @@ const Seperator = styled.hr`
   margin: 15px 0;
 `;
 
-const Certifications = (
-  <>
-    <SidebarTitle>Certifications</SidebarTitle>
-    <SidebarHeading>AWS Developer Associate</SidebarHeading>
-    <SidebarInfo>12/08/2019 (PWYQS9G1MFE11RSL)</SidebarInfo>
-  </>
-);
-
-const OSSContributionsHref = styled.a`
+const SocialLinkHref = styled.a`
+  text-decoration: none;
   color: #0000ee;
   font-style: italic;
+  padding-top: 6px;
+  display: block;
+  font-size: 14px;
+
+  &:first-of-type {
+    padding-top: 8px;
+  }
+
+  & i.fa {
+    color: #000;
+    display: inline-flex;
+    width: 16px;
+  }
 `;
 
 const OSSContributions = (
   <>
     <SidebarTitle>OSS Contributions</SidebarTitle>
-    <SidebarInfo>
-      -{' '}
-      <OSSContributionsHref href="https://github.com/facebook/react/pull/19054">
-        Contribution
-      </OSSContributionsHref>{' '}
-      to react
-    </SidebarInfo>
-    <SidebarInfo>
-      - <OSSContributionsHref href="https://github.com/peak-ai/flashr">Flashr</OSSContributionsHref>{' '}
-      notifications queue for redux.
-    </SidebarInfo>
+    <SidebarHypenList>
+      <li>
+        <a href="https://github.com/charlie1404/vqs">VQS</a> SQS Compatible High performance Queue
+        Server (in dev).
+      </li>
+      <li>
+        <a href="https://github.com/facebook/react/pull/19054">Contribution</a> to react
+      </li>
+      <li>
+        <a href="https://github.com/peak-ai/flashr">Flashr</a> notifications queue for redux.
+      </li>
+    </SidebarHypenList>
+  </>
+);
+
+const Certifications = (
+  <>
+    <SidebarTitle>Certifications</SidebarTitle>
+    <SidebarHeading>AWS Developer Associate</SidebarHeading>
+    <SidebarInfo>12/08/2019 (PWYQS9G1MFE11RSL)</SidebarInfo>
   </>
 );
 
@@ -88,23 +120,11 @@ const TechnicalSkillsHandsOn = (
   </>
 );
 
-const TechnicalSkillsRelevantCourses = (
-  <>
-    <SidebarHeading>Relevant Courses :</SidebarHeading>
-    <SidebarInfo>
-      Data&nbsp;Structures&nbsp;&amp;&nbsp;Algorithms |
-      Design&nbsp;&amp;&nbsp;Analysis&nbsp;of&nbsp;Algorithms | Operating&nbsp;System |
-      UNIX&nbsp;Programming | Computer&nbsp;Networks | Databases
-    </SidebarInfo>
-  </>
-);
-
 const TechnicalSkills = (
   <>
     <SidebarTitle>Technical Skills</SidebarTitle>
     {TechnicalSkillsExperienced}
     {TechnicalSkillsHandsOn}
-    {/* TechnicalSkillsRelevantCourses */}
   </>
 );
 
@@ -129,29 +149,13 @@ const Education = (
 const HonorsAndAwards = (
   <>
     <SidebarTitle>Honors and Awards</SidebarTitle>
-    <SidebarInfo>- Peak Value Award (2 times)</SidebarInfo>
-    <SidebarInfo>- Deloitte Innovation Award, SIH 2017</SidebarInfo>
+    <SidebarHypenList>
+      <li>Razorpay Spot Award (Autonomy and Ownership)</li>
+      <li>Peak Value Award (2 times)</li>
+      <li>Deloitte Innovation Award, SIH 2017</li>
+    </SidebarHypenList>
   </>
 );
-
-const SocialLinkHref = styled.a`
-  text-decoration: none;
-  color: #0000ee;
-  font-style: italic;
-  padding-top: 6px;
-  display: block;
-  font-size: 14px;
-
-  &:first-of-type {
-    padding-top: 8px;
-  }
-
-  & i.fa {
-    color: #000;
-    display: inline-flex;
-    width: 16px;
-  }
-`;
 
 const SocialLinks = (
   <>
@@ -174,11 +178,11 @@ const SocialLinks = (
 function RightSidebar() {
   return (
     <Sidebar>
-      {Certifications}
-      <Seperator />
       {OSSContributions}
       <Seperator />
       {TechnicalSkills}
+      <Seperator />
+      {Certifications}
       <Seperator />
       {Education}
       <Seperator />

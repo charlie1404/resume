@@ -12,7 +12,7 @@ function VimeoLogo() {
     <svg
       width="16"
       height="16"
-      viewBox="0 0 256 223"
+      viewBox="0 -10 256 223"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
@@ -38,6 +38,7 @@ const logos = {
   razorpay: <RazorpayLogo />,
   vimeo: <VimeoLogo />,
   peak: <PeakLogo />,
+  peak_intern: <PeakLogo />,
 };
 
 export default logos;

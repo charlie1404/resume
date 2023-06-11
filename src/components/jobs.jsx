@@ -26,21 +26,22 @@ const Position = styled.span`
   font-weight: bold;
 `;
 
-const Location = styled.p`
-  margin-top: 5px;
-  font-style: italic;
-`;
-
-const Duration = styled.p`
-  margin-top: 5px;
+const LocationDurationWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 14px;
+  padding-left: 12px;
   font-style: italic;
 `;
 
 const CompanyHref = styled.a`
   text-decoration: none;
-  color: #0000ee;
-  font-style: italic;
+  color: #0000ff;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 20px;
 `;
 
 const DescUnOrderedList = styled.ul`
@@ -49,7 +50,7 @@ const DescUnOrderedList = styled.ul`
 
   & li {
     text-align: justify;
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 14px;
   }
 `;
@@ -59,14 +60,18 @@ function JobSection({ jobName, position, company, website, location, from, to, d
     <JobExpArticle>
       <Title>
         <Position>{position}</Position>&nbsp;|&nbsp;
-        <CompanyHref href={website}>{company}</CompanyHref>&nbsp;{logos[jobName]}
+        <CompanyHref href={website}>
+          {logos[jobName]}&nbsp;{company}
+        </CompanyHref>
       </Title>
-      <Location>
-        <i className="fa fa-map-marker" /> {location}
-      </Location>
-      <Duration>
-        <i className="fa fa-calendar"></i> {from} — {to}
-      </Duration>
+      <LocationDurationWrapper>
+        <p>
+          <i className="fa fa-map-marker" /> {location}
+        </p>
+        <p>
+          <i className="fa fa-calendar"></i> {from} — {to}
+        </p>
+      </LocationDurationWrapper>
       <DescUnOrderedList>
         {desc.map((e, i) => (
           <li key={i}>{e}</li>

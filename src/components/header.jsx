@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 
 const StyledHeader = styled.header`
   display: inline-block;
-  height: 140px;
+  height: 130px;
   width: 100%;
-  padding: 25px 0;
+  padding: 20px 0;
   background-color: #3c5769;
   color: white;
 `;

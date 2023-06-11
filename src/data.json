@@ -8,11 +8,21 @@
     "from": "Nov, 2021",
     "to": "Current",
     "desc": [
+      "Contributed to internal reconciliation system, which is responsible anomaly detection prevent money leaks and moeny verification.",
+      "Implemented fraud detection mechanism on commission payouts to prevent loss/abuse. We identified incorrect monthly payouts upto 35L. (Immediate loss from NR)",
+      "Setup alert and monitoring system for our module which later detected org wide outage in workers. (Outgae leading delays in balance updates, payouts, refund processings and many more capablities.)",
       "Developed solutions for partnership modules, including commission calculation and tracking.",
       "Implemented various payment products, including QR codes, Smart Collect, subscriptions, and payment links, to generate commissions.",
       "Executed successful migrations of critical operations without interruption of service, such as user roles migration.",
       "Managed P2 incident from start to finish, including triage and incident report generation."
-    ]
+    ],
+    "comments": {
+      "desc": [
+        "With fraud detection system we identifies fraudelent subM added to groww (650Cr gmv) and prevented 30L commissions payout.",
+        "Moved from owner to view only role",
+        "GupShup behaviour change lead to cascading failures in our system. We were able to identify the issue and fix it within an hours."
+      ]
+    }
   },
   {
     "jobName": "vimeo",
@@ -23,10 +33,9 @@
     "from": "March, 2021",
     "to": "Nov, 2021",
     "desc": [
-      "Created a video tagging pipeline (pre-download service) to dynamically add metadata to MP4 files.",
-      "Integrated Vimeo-Create with partners such as ConstantContacts and Facebook.",
-      "Identified and resolved routing issues in internal framework.",
-      "Modified code generation scripts for routing files.",
+      "Created a video tagging pipeline (pre-download service) to dynamically add exif metadata to MP4 files.",
+      "Integrated Vimeo-Create (In browser video creation and editing experience) with partners such as ConstantContacts and Facebook.",
+      "Enhanced code generation scripts for internal routing files.",
       "Fixed several issues in Vimeo-Create integration SDK, including overlays and post-message communication.",
       "Developed authentication, app capabilities, and session handling for cookies, including support for JWT interoperability in cases where 3rd party cookies are blocked."
     ]
@@ -40,13 +49,23 @@
     "from": "Aug, 2018",
     "to": "Jan, 2021",
     "desc": [
-      "Good experience in managing crucial services such as user management, notification, workflows, authentication, and RBAC (role-based access control) services.",
-      "Created a TCP layer proxy for AWS Lambda and PostgreSQL communication without a persistent connection.",
-      "Developed connectors for data fetching through FTP/SFTP.",
-      "Integrated Sisnese (BI tool) into the frontend application.",
-      "Utilized various AWS services, including Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, and SQS for application module development.",
-      "Improved frontend delivery through code-splitting and implementing a more effective caching strategy (edge caching and object expiration).",
+      "Developed a TCP proxy for AWS Lambda use cases and PostgreSQL communication. (Later replaced with RDS proxy)",
+      "Developed connectors (plugin for internal pipelines) for data fetching through FTP/SFTP.",
+      "Improved frontend delivery through code-splitting and implementing a effective caching strategy (edge caching and object expiration).",
       "Developed a custom component library to move presentational components out of the business application.",
+      "Owned of crucial services such as user management, notification, workflows, authentication and RBAC services.",
+      "Hands on experience with AWS services like AWS Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, and SQS."
+    ]
+  },
+  {
+    "jobName": "peak_intern",
+    "position": "Software Engineer Intern",
+    "company": "Peak.ai",
+    "website": "https://peak.ai/",
+    "location": "Jaipur, Rajasthan",
+    "from": "May, 2018",
+    "to": "Jun, 2018",
+    "desc": [
       "Built an automated data fetching pipeline from mintuk.bvdinfo.com and Google Big Query."
     ]
   }
