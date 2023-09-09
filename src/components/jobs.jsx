@@ -61,7 +61,7 @@ function JobSection({ jobName, position, company, website, location, from, to, d
       <Title>
         <Position>{position}</Position>&nbsp;|&nbsp;
         <CompanyHref href={website}>
-          {logos[jobName]}&nbsp;{company}
+          {company}&nbsp;{logos[jobName]}
         </CompanyHref>
       </Title>
       <LocationDurationWrapper>

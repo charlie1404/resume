@@ -35,7 +35,7 @@ function Header() {
         <span className="bold">|&nbsp;&nbsp;</span>
         &nbsp;
         <i className="fa fa-map-marker" />
-        &nbsp;&nbsp;Jaipur, Rajasthan
+        &nbsp;&nbsp;Bengaluru, Karnataka
       </HeaderDesc>
     </StyledHeader>
   );

@@ -8,19 +8,21 @@
     "from": "Nov, 2021",
     "to": "Current",
     "desc": [
-      "Contributed to internal reconciliation system, which is responsible anomaly detection prevent money leaks and moeny verification.",
-      "Implemented fraud detection mechanism on commission payouts to prevent loss/abuse. We identified incorrect monthly payouts upto 35L. (Immediate loss from NR)",
-      "Setup alert and monitoring system for our module which later detected org wide outage in workers. (Outgae leading delays in balance updates, payouts, refund processings and many more capablities.)",
-      "Developed solutions for partnership modules, including commission calculation and tracking.",
-      "Implemented various payment products, including QR codes, Smart Collect, subscriptions, and payment links, to generate commissions.",
-      "Executed successful migrations of critical operations without interruption of service, such as user roles migration.",
-      "Managed P2 incident from start to finish, including triage and incident report generation."
+      "Developed RSP module from scratch for ONDC (Open Network for Digital Commerce) initiative. (RSP: Reconciliation and Settlement Service Provider)",
+      "Contributed to ART (Auto Recon Tool), which is responsible for anomaly detection, preventing money leaks and payments verification.",
+      "Implemented fraud detection mechanism on commission payouts to prevent loss/abuse. This identified incorrect monthly payouts up to 35L. (Immediate loss from NR)",
+      "Setup alert and monitoring framework for our workers which later detected org-wide outage in async workers.",
+      "Developed commissions generation capability for various payment products (QR, SmartCollect, E-Mandate, CAW, and PaymentLinks).",
+      "Executed successful migrations of critical operations without interruption of services, (user roles migration)",
+      "Managed P2 incident from start to finish (triage to RCA)."
     ],
     "comments": {
       "desc": [
-        "With fraud detection system we identifies fraudelent subM added to groww (650Cr gmv) and prevented 30L commissions payout.",
+        "Async Workers Outage: leading delays in balance updates, payouts, refund processing and many more capabilities.",
+        "CAW: Charge at will",
+        "With fraud detection system we identify fraudulent subM added to Groww (650Cr GMV) and prevented 35L commissions payout.",
         "Moved from owner to view only role",
-        "GupShup behaviour change lead to cascading failures in our system. We were able to identify the issue and fix it within an hours."
+        "GupShup behaviour change leads to cascading failures in our system. We were able to identify the issue and get it fixed within 15 minutes"
       ]
     }
   },
@@ -33,11 +35,11 @@
     "from": "March, 2021",
     "to": "Nov, 2021",
     "desc": [
-      "Created a video tagging pipeline (pre-download service) to dynamically add exif metadata to MP4 files.",
-      "Integrated Vimeo-Create (In browser video creation and editing experience) with partners such as ConstantContacts and Facebook.",
+      "Developed tagging pipeline (pre-download) to dynamically add EXIF metadata to MP4 files.",
+      "Integrated Vimeo-Create with partners such as ConstantContacts and Facebook.",
       "Enhanced code generation scripts for internal routing files.",
       "Fixed several issues in Vimeo-Create integration SDK, including overlays and post-message communication.",
-      "Developed authentication, app capabilities, and session handling for cookies, including support for JWT interoperability in cases where 3rd party cookies are blocked."
+      "Developed support for JWT interoperability for cases where 3rd party cookies were blocked."
     ]
   },
   {
@@ -49,12 +51,12 @@
     "from": "Aug, 2018",
     "to": "Jan, 2021",
     "desc": [
-      "Developed a TCP proxy for AWS Lambda use cases and PostgreSQL communication. (Later replaced with RDS proxy)",
+      "Contributor of user management, authentication and RBAC services (IAM). Responsible for complete authentication and authorization flow, across all services.",
+      "Developed a TCP proxy for AWS Lambda use cases and PostgreSQL communication. (Inhouse RDS proxy)",
       "Developed connectors (plugin for internal pipelines) for data fetching through FTP/SFTP.",
-      "Improved frontend delivery through code-splitting and implementing a effective caching strategy (edge caching and object expiration).",
-      "Developed a custom component library to move presentational components out of the business application.",
-      "Owned of crucial services such as user management, notification, workflows, authentication and RBAC services.",
-      "Hands on experience with AWS services like AWS Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, and SQS."
+      "Improved frontend delivery through code-splitting and implementing an effective caching strategy (edge caching and object expiration).",
+      "Developed a custom component library to move presentational logic out of the business application.",
+      "Hands-on experience with AWS services like AWS Lambda, DynamoDB, API Gateway, S3, Cloudfront, EC2, IAM, and SQS."
     ]
   },
   {
@@ -66,7 +68,7 @@
     "from": "May, 2018",
     "to": "Jun, 2018",
     "desc": [
-      "Built an automated data fetching pipeline from mintuk.bvdinfo.com and Google Big Query."
+      "Pipeline for automated data fetching from mintuk.bvdinfo.com and Big Query."
     ]
   }
 ]
