@@ -5,7 +5,7 @@ const Sidebar = styled.aside`
   padding: 15px;
   padding-bottom: 0;
   background-color: #f5f5f5;
-  height: calc(297mm - 130px);
+  height: calc(297mm - 120px);
 `;
 
 const SidebarTitle = styled.h2`
@@ -52,7 +52,7 @@ const Seperator = styled.hr`
   background-color: #c4c4c4;
   border: none;
   height: 1px;
-  margin: 15px 0;
+  margin: 14px 0;
 `;
 
 const SocialLinkHref = styled.a`
@@ -128,6 +128,13 @@ const TechnicalSkills = (
   </>
 );
 
+const Internship = (
+  <>
+    <SidebarTitle>Internship</SidebarTitle>
+    <SidebarInfo>Peak.ai [05/2018 — 06/2018]</SidebarInfo>
+  </>
+);
+
 const Education = (
   <>
     <SidebarTitle>Education</SidebarTitle>
@@ -183,6 +190,8 @@ function RightSidebar() {
       {TechnicalSkills}
       <Seperator />
       {Certifications}
+      <Seperator />
+      {Internship}
       <Seperator />
       {Education}
       <Seperator />

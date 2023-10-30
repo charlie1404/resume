@@ -38,7 +38,7 @@ const LocationDurationWrapper = styled.div`
 const CompanyHref = styled.a`
   text-decoration: none;
   color: #0000ff;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   height: 20px;
@@ -46,12 +46,12 @@ const CompanyHref = styled.a`
 
 const DescUnOrderedList = styled.ul`
   padding-inline-start: 30px;
-  padding-top: 4px;
+  padding-top: 6px;
 
   & li {
     text-align: justify;
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 13px;
   }
 `;
 
@@ -59,7 +59,7 @@ function JobSection({ jobName, position, company, website, location, from, to, d
   return (
     <JobExpArticle>
       <Title>
-        <Position>{position}</Position>&nbsp;|&nbsp;
+        <Position>{position}</Position>&nbsp;@&nbsp;
         <CompanyHref href={website}>
           {company}&nbsp;{logos[jobName]}
         </CompanyHref>
