@@ -8,16 +8,16 @@
     "from": "Nov, 2021",
     "to": "Current",
     "desc": [
-      "Developed multiple features for internal \"Auto Recon Tool\", handling reconciliation of millions of txns for payments, refunds, chargebacks and settlements everyday.",
-      "Also, developed features responsible for anomaly detection like money leaks, and fraudulent txns in ART.",
-      "Reduced internal data fetching scripts time from greater than 2 hours to under few minutes. With this fetching jobs now work with 10% of initial cost.",
-      "Reduces data ingestion time in spark pipeline by 10-20% by changing few ingestion strategies.",
-      "Developed Reconciliation and Settlement Service module from scratch for ONDC (Open Network for Digital Commerce) initiative.",
-      "Implemented fraud detection mechanism on commission payouts to prevent loss/abuse. This helped identify monthly payouts up to 3.5 million. (Net revenue loss)",
-      "Setup alert and monitoring framework for workers which later helped in detecting org-wide outages before creating impact on payments.",
-      "Developed & Managed commission module for various payment products at scale of 300 TPS for commisions create and at 900 TPS for its pricing.",
-      "Executed successful migrations of critical operations without interruption of services, (user roles migration)",
-      "Managed P2 incident (customer experience breakage) from triage to RCA."
+      "Developed and implemented new features for internal reconciliation tool to process millions of transactions daily (TBs of data) for payments, refunds, chargebacks, payouts and settlements.",
+      "Implemented anomaly detection algorithms to identify potential money leaks and fraudulent transactions.",
+      "Optimized data fetching scripts to reduce run time from over 2 hours to under a few minutes, reducing costs by 90%.",
+      "Reduced Spark data ingestion time by 10-20% through ingestion strategy improvements.",
+      "Developed the Reconciliation and Settlement Service module from scratch for the ONDC (Open Network for Digital Commerce) initiative.",
+      "Built a fraud detection system to prevent loss and abuse in monthly commission payouts identifying up to 3.5 million from net revenue loss each month.",
+      "Established monitoring and alerting for workers to enable early detection of organization-wide outages before customer impact.",
+      "Scaled the commissions module to handle 300 TPS for commissions creation and 900 TPS for commissions pricing calculations.",
+      "Executed zero-downtime migrations of critical operations like user role migration.",
+      "Managed P2 incidents from triage to root cause analysis (customer experience breakage)."
     ],
     "comments": {
       "desc": [
@@ -39,10 +39,10 @@
     "from": "March, 2021",
     "to": "Nov, 2021",
     "desc": [
-      "Developed tagging pipeline (pre-download) to dynamically add EXIF metadata to MP4 files.",
-      "Integrated Vimeo-Create with partners such as ConstantContacts and Facebook.",
+      "Built a tagging pipeline to dynamically add EXIF metadata to MP4 files before download.",
+      "Integrated Vimeo-Create with partners like Constant Contacts and Facebook.",
       "Enhanced code generation scripts for internal routing files.",
-      "Fixed several issues in Vimeo-Create integration SDK, including overlays and post-message communication."
+      "Fixed issues in Vimeo-Create SDK integration including overlays and post-message communication."
     ]
   },
   {
@@ -54,13 +54,13 @@
     "from": "Aug, 2018",
     "to": "Jan, 2021",
     "desc": [
-      "Improved frontend delivery through code-splitting and implementing an effective caching strategy (edge caching and object expiration).",
-      "Responsible for complete authentication and authorization flow, across all services including user management and RBAC (IAM).",
-      "Developed a TCP proxy for AWS Lambda use cases and PostgreSQL communication. (Inhouse RDS proxy)",
-      "Developed connectors (plugin for internal pipelines) for data fetching through FTP/SFTP.",
-      "Developed micro-services with AWS services like AWS Lambda, DynamoDB, S3, IAM, and SQS.",
-      "Developed a custom component library to move presentational logic out of the business application.",
-      "Pipeline for automated data fetching from mintuk.bvdinfo.com and Big Query."
+      "Improved frontend delivery through code splitting and implementing effective caching strategies including edge caching and object expiration.",
+      "Owned authentication, authorization, and RBAC (role-based access control) flows across all services including user management.",
+      "Developed a TCP proxy for AWS Lambda and PostgreSQL communication. (Inhouse RDS proxy alternative)",
+      "Built connectors as plugins for internal pipelines to fetch data via FTP and SFTP.",
+      "Developed serverless microservices leveraging AWS services like Lambda, DynamoDB, S3, IAM, and SQS.",
+      "Created a custom UI component library to abstract presentational logic from the core business application.",
+      "Built data pipelines to automatically ingest data from sources like mintuk.bvdinfo.com and BigQuery."
     ]
   }
 ]
