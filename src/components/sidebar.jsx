@@ -102,20 +102,9 @@ const Certifications = (
 
 const TechnicalSkillsExperienced = (
   <>
-    <SidebarHeading>Experienced :</SidebarHeading>
     <SidebarInfo>
-      React | Redux | NodeJS | PHP | Golang | ExpressJS | Javascript | AWS&nbsp;S3 |
-      AWS&nbsp;DynamoDB | AWS&nbsp;Lambda | API&nbsp;Gateway
-    </SidebarInfo>
-  </>
-);
-
-const TechnicalSkillsHandsOn = (
-  <>
-    <SidebarHeading>Hands-On :</SidebarHeading>
-    <SidebarInfo>
-      CloudFormation (IAC) | AWS&nbsp;SNS | Microservice&nbsp;Infra | AWS&nbsp;SQS |
-      Serverless&nbsp;Computing
+      NodeJS || Golang || PHP || Python || DynamoDB || S3 || SQS || IAM || AWS&nbsp;Lambda ||
+      Kubernetes || PySpark || MySQL || React
     </SidebarInfo>
   </>
 );
@@ -124,7 +113,6 @@ const TechnicalSkills = (
   <>
     <SidebarTitle>Technical Skills</SidebarTitle>
     {TechnicalSkillsExperienced}
-    {TechnicalSkillsHandsOn}
   </>
 );
 
@@ -185,11 +173,11 @@ const SocialLinks = (
 function RightSidebar() {
   return (
     <Sidebar>
-      {OSSContributions}
+      {Certifications}
       <Seperator />
       {TechnicalSkills}
       <Seperator />
-      {Certifications}
+      {OSSContributions}
       <Seperator />
       {Internship}
       <Seperator />

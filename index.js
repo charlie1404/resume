@@ -14,7 +14,7 @@ async function run() {
   server = await preview({ preview: { port: 8088 } });
 
   core.info('Starting puppeteer!!');
-  browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-gpu'] });
+  browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-gpu'] });
 
   core.info('Navigating to server url!!');
   const page = (await browser.pages())[0];
