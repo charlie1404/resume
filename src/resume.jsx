@@ -26,6 +26,7 @@ const globalStyles = css`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;
+    overscroll-behavior: none;
   }
   header,
   aside,
@@ -35,7 +36,7 @@ const globalStyles = css`
 
   @media only screen {
     body {
-      border: 1px solid #000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
   }
 `;

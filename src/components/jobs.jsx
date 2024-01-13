@@ -8,7 +8,7 @@ const StyledSection = styled.section`
 `;
 
 const JobExpArticle = styled.article`
-  margin: 15px 20px 0;
+  margin: 15px 16px 0 10px;
   & i.fa {
     font-size: 14px;
     display: inline-flex;
