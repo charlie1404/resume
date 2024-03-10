@@ -1,24 +1,21 @@
 import styled from '@emotion/styled';
 
 const StyledHeader = styled.header`
-  display: inline-block;
-  height: 120px;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #3c5769;
-  color: white;
+  padding: 0;
 `;
 
 const HeaderTitleH1 = styled.h1`
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
 `;
 
-const HeaderDesc = styled.p`
+const HeaderDesc = styled.div`
+  margin-top: 8px;
   font-size: 16px;
-  line-height: 20px;
-  margin-top: 14px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
 `;
 
 function Header() {

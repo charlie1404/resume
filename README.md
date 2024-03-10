@@ -1,12 +1,12 @@
 # Resume
 
-A simple repo that generates a PDF resume from JSON data. Simply enter your information in the `src/data.json` file and push repo to github. Automated commit will push the resume.pdf after your commit.
+Simply enter your information in the `src/*.mjs` files and some hard coded string. Then push commit to github. Automated commit from CI will be pushed with updated resume.pdf.
 
 ## Usage
 
 1. Clone the repository: `git clone https://github.com/charlie1404/resume.git`
-2. Enter your information in the `src/data.json` file.
-3. push your commit
+2. Change data
+3. push your commit (disabled actions for now)
 
 ## Requirements
 
@@ -17,15 +17,9 @@ A simple repo that generates a PDF resume from JSON data. Simply enter your info
 
 The resume template is written in react using vite and can be customized to your liking by modifying the components in `src` folder.
 
-## Example
-
-A sample `data.json` file and generated PDF resume are included for reference.
-
 ## Contributing
 
 Contributions are welcome! Feel free to submit a pull request with any changes or improvements.
 
 ## TODO
-
-- [ ] take sidebar content from json as well, instead being hard coded
 - [ ] think better way for including logos
