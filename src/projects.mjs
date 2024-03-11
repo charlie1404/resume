@@ -6,7 +6,7 @@ const projectsData = [
   },
   {
     title: 'Contributions to React',
-    link: 'https://github.com/facebook/react/pulls?q=author%3Acharlie1404+is%3Aclosed',
+    link: 'https://github.com/facebook/react/pulls?q=author:charlie1404+is:closed',
     nature: '(Open Source Contribution)',
   },
   {

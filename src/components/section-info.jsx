@@ -29,7 +29,8 @@ const Bullets = styled.ul`
   & li {
     text-align: justify;
     margin-top: 2px;
-    font-size: 13px;
+    font-size: 13.5px;
+    line-height: 1.2;
   }
 `;
 
@@ -46,7 +47,7 @@ function Information(props) {
     <>
       <TitleLine>
         <p className="left">{leftTitle}</p>
-        <p className="right">{rightToTitle || ' '}</p>
+        <p className="right">{rightToTitle}</p>
       </TitleLine>
       <Line>
         <p className="left">
@@ -60,7 +61,7 @@ function Information(props) {
       {bullets && bullets.length > 0 && (
         <Bullets>
           {bullets.map((e, i) => (
-            <li key={i}>{e}</li>
+            <li key={i} dangerouslySetInnerHTML={{ __html: e }} />
           ))}
         </Bullets>
       )}
@@ -99,9 +100,16 @@ function LinedInformation(props) {
 const SocialLinkHref = styled.a`
   text-decoration: none;
   color: #0000ee;
-  padding-top: 4px;
   display: block;
   font-size: 14px;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+
+  &:not(:first-of-type) {
+    padding-top: 6px;
+  }
 
   & i.fa {
     color: #000;

@@ -10,13 +10,16 @@ import { RazorpayLogo, VimeoLogo, PeakLogo } from './components/logos';
 import jobsData, { internshipData } from './jobs.mjs';
 import projectsData from './projects.mjs';
 
+const useLegal = false;
+const pageWidth = useLegal ? '215.9mm' : '210mm';
+
 const globalStyles = css`
   * {
     margin: 0;
     padding: 0;
   }
   body {
-    font-family: 'Computer Modern Serif', serif;
+    font-family: 'Georgia', serif;
     overscroll-behavior: none;
   }
   header,
@@ -27,15 +30,17 @@ const globalStyles = css`
 
   @media only screen {
     body {
-      width: 225mm; /* A4 + margin */
+      width: calc(${pageWidth} + 20mm); /* page width + 20 (margin) */
       margin: 0 auto;
       padding-bottom: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
+    #root {
+      width: ${pageWidth}; /* page width */
+    }
   }
 
   #root {
-    width: 215mm;
     margin: 0 auto;
   }
 `;
@@ -87,7 +92,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ResumeSection title="Education">
       <Information
         leftTitle="Global Institute of Technology"
-        rightToTitle="May, 2015 — Dropped Out (2018)"
+        rightToTitle="May, 2015 — Drop Out (2018)"
         leftLine="B.Tech, Computer Science and Engineering"
         rightToLine="Jaipur, RJ"
       />
@@ -123,9 +128,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       />
     </ResumeSection>
     <ResumeSection title="Honors & Awards">
-      <Information leftTitle="Razorpay Spot Award" leftLine="(Autonomy and Ownership)" />
-      <Information leftTitle="Peak Value Award" leftLine="Most Valueable Contributor (2 times)" />
-      <Information leftTitle="Deloitte Innovation Award" leftLine="Smart India Hackathon 2017" />
+      <Information
+        leftTitle="Razorpay Spot Award"
+        rightToTitle="2022"
+        leftLine="(Autonomy and Ownership)"
+      />
+      <Information
+        leftTitle="Peak Value Award"
+        rightToTitle="2019, 2020"
+        leftLine="Most Valueable Contributor (2 times)"
+      />
+      <Information
+        leftTitle="Deloitte Innovation Award"
+        rightToTitle="2017"
+        leftLine="Smart India Hackathon"
+      />
     </ResumeSection>
     <ResumeSection title="Social Links">
       <SocialLinkHref href="https://github.com/charlie1404">

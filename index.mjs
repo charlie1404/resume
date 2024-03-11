@@ -29,11 +29,17 @@ async function run() {
   core.info('Starting generating PDF!!');
   await page.pdf({
     path: outputFilePath,
-    format: 'Legal',
-    // format: 'A4',
-    margin: { top: '5mm', left: '5mm', right: '5mm', bottom: '5mm' },
-    printBackground: false,
-    // pageRanges: '1',
+    format: 'A4',
+    margin: {
+      top: '10mm',
+      left: '10mm',
+      right: '10mm',
+      bottom: '10mm',
+    },
+    displayHeaderFooter: true,
+    headerTemplate: '<i></i>',
+    footerTemplate:
+      '<span style="font-size:11px; position:absolute; bottom:0.5mm; right:50%; transform:translateX(50%);">Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>',
   });
 
   core.info('PDF generation complete!!');
