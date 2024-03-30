@@ -7,11 +7,12 @@ const jobsData = [
     to: 'Present',
     logo: 'razorpay',
     bullets: [
-      'Designed and Developed Recon SaaS from scratch <b>(in Golang)</b> with multi-tenancy support to provide recon capabilities to customers.',
+      'Build Recon as SaaS from scratch <b>(in Golang)</b> with multi-tenancy support to provide recon capabilities to customers.',
       'Contributed to the development of Auto Recon Tool, processing <b>8+ million txn a day</b> including payments, refunds, chargebacks, payouts, and settlements.',
       'Reduced data fetching time from data lake from <b>2+ hours to under a few minutes</b>, thus reducing cloud cost by 90% for fetching.',
       'Developed Golang microservice for Reconciliation and Settlements module from scratch for the <b>ONDC network (Govt. of India initiative).</b>',
       "Increase the commission module's capacity to handle up to <b>3.6 lakhs txn/minute</b> and up to <b>18 lakh calculations/minute</b> without an increase in cost.",
+      'Managed infra for our microservices using <b>Spinnaker, Terraform and Kubernetes.</b>',
     ],
   },
   {
@@ -37,7 +38,7 @@ const jobsData = [
     to: 'Nov, 2021',
     logo: 'vimeo',
     bullets: [
-      'Built a tagging pipeline to dynamically add EXIF metadata to MP4 files before download using <b>Node.js over a stream.</b>',
+      'Built a pipeline to dynamically add EXIF metadata (pre download) to MP4 files using <b>Node.js over a stream.</b>',
       'Integrated Vimeo-Create with partners like Constant Contacts and Facebook.',
       'Simplified code generation scripts for internal routing files.',
       'Fixed race condition in Vimeo-Create SDK to handle overlays issue with post-message communication.',
@@ -57,7 +58,7 @@ const jobsData = [
       'Developed a TCP proxy for AWS Lambda and PostgreSQL communication. (Inhouse RDS proxy alternative)',
       'Improved frontend delivery by 50% through code splitting and implementing effective caching strategies and object expiration.',
       'Developed <b>serverless microservices</b> leveraging AWS services like Lambda, DynamoDB, S3, IAM, and SQS.',
-      'Created a custom <b>React UI components</b> library to extract presentational logic from the core business application.',
+      'Created custom <b>React UI components</b> to extract presentational logic from the core business application.',
     ],
   },
 ];

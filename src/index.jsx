@@ -89,23 +89,34 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         />
       ))}
     </ResumeSection>
+    <ResumeSection title="Technical Skills">
+      <LinedInformation
+        lines={[
+          ['Languages', 'NodeJS, Golang, PHP, Python, JAVA, TypeScript, Shell Scripting'],
+          ['Frameworks', 'React, Express, PySpark, Flask, Laravel, Django, Gin'],
+          ['Developer Tools', 'Git, Docker, Spinnaker, Kubernetes, Jenkins, Terraform, Postman'],
+          ['Databases', 'MySQL, PostgreSQL, DynamoDB, MongoDB, Redis, Elasticsearch'],
+          ['SaaS/Cloud Tech', 'S3, SQS, IAM, AWS Lambda, EC2, Auth0'],
+        ]}
+      />
+    </ResumeSection>
     <ResumeSection title="Education">
       <Information
-        leftTitle="Global Institute of Technology"
-        rightToTitle="May, 2015 — Drop Out (2018)"
-        leftLine="B.Tech, Computer Science and Engineering"
+        leftTitle="B.Tech, Computer Science and Engineering"
+        rightToTitle="May, 2015 — 2018 (Drop Out)"
+        leftLine="Global Institute of Technology"
         rightToLine="Jaipur, RJ"
       />
       <Information
-        leftTitle="Rawat Public School (CBSE)"
+        leftTitle="Senior Secondary"
         rightToTitle="Jul, 2012 — Apr, 2014"
-        leftLine="Senior Secondary"
+        leftLine="Rawat Public School (CBSE)"
         rightToLine="Jaipur, RJ"
       />
       <Information
-        leftTitle="Rawat Public School (CBSE)"
+        leftTitle="Secondary"
         rightToTitle="Jul, 2010 — Apr, 2012"
-        leftLine="Secondary"
+        leftLine="Rawat Public School (CBSE)"
         rightToLine="Jaipur, RJ"
       />
     </ResumeSection>
@@ -114,17 +125,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         leftTitle="AWS Developer Associate"
         rightToTitle="12th Aug, 2019"
         leftLine="PWYQS9G1MFE11RSL"
-      />
-    </ResumeSection>
-    <ResumeSection title="Technical Skills">
-      <LinedInformation
-        lines={[
-          ['Languages', 'NodeJS, Golang, PHP, Python'],
-          ['Frameworks', 'React, Express, PySpark, Flask, Laravel, Django, Gin'],
-          ['Developer Tools', 'Git, Docker, Spinnaker, Kubernetes, Jenkins, Jira, Postman'],
-          ['Databases', 'MySQL, PostgreSQL, DynamoDB'],
-          ['SaaS/Cloud Tech', 'S3, SQS, IAM, AWS Lambda, Auth0'],
-        ]}
       />
     </ResumeSection>
     <ResumeSection title="Honors & Awards">

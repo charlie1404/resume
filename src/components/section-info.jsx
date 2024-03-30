@@ -78,6 +78,13 @@ const LinedInformationLine = styled.div`
 
   & span.title {
     font-weight: bold;
+    display: inline-block;
+    width: 40mm;
+
+    &::after {
+      content: ' :';
+      font-weight: normal;
+    }
   }
 `;
 
@@ -89,8 +96,7 @@ function LinedInformation(props) {
       {lines.map(([lineTitle, lineContent], i) => (
         <LinedInformationLine key={i}>
           <span className="title">{lineTitle}</span>
-          {': '}
-          <span className="content">{lineContent}</span>
+          <span className="content">{lineContent.split(/\s*,\s*/).join(' ┆ ')}</span>
         </LinedInformationLine>
       ))}
     </>
