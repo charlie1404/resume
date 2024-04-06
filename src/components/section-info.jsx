@@ -55,7 +55,7 @@ function Information(props) {
             return <React.Fragment key={i}>{child}</React.Fragment>;
           })}
         </p>
-        <p className="right">{rightToLine}</p>
+        <p className="right" dangerouslySetInnerHTML={{ __html: rightToLine }} />
       </Line>
 
       {bullets && bullets.length > 0 && (

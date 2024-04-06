@@ -1,8 +1,8 @@
 const projectsData = [
   {
-    title: 'Flashr (Redux Notifications Queue)',
-    link: 'https://github.com/peak-ai/flashr',
-    nature: '(Open Source Contribution)',
+    title: 'Chain Reaction Game',
+    link: 'https://github.com/charlie1404/chain-reaction',
+    nature: '<a href="https://chain-reaction-web.netlify.app/"> Play  Here</a>',
   },
   {
     title: 'Contributions to React',
@@ -10,13 +10,13 @@ const projectsData = [
     nature: '(Open Source Contribution)',
   },
   {
-    title: 'VQS (SQS like Queue backed mmap files)',
-    link: 'https://github.com/charlie1404/vqs',
-    nature: '(In Development)',
+    title: 'Flashr (Redux Notifications Queue)',
+    link: 'https://github.com/peak-ai/flashr',
+    nature: '(Open Source Contribution)',
   },
   {
-    title: 'Chain Reaction (Multiplayer Game)',
-    link: 'https://github.com/charlie1404/chain-reaction',
+    title: 'VQS (SQS like Queue backed by memory mapped files)',
+    link: 'https://github.com/charlie1404/vqs',
     nature: '(In Development)',
   },
 ];
