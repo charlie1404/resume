@@ -11,7 +11,7 @@ const jobsData = [
       'Implemented reconciliation strategies for several gateways for Auto Recon Tool, processing upto <b>8+ million txn a day</b>.',
       'Reduced data fetching time from datalake from <b>2+ hours to under a few minutes</b>, thus reducing cloud cost by 90% for fetching.',
       'Developed Golang microservice for Reconciliation & Settlements module from scratch for <b>ONDC network (Govt. of India initiative).</b>',
-      "Increased commission module's capacity to handle up to <b>3.6 lakhs txn/minute</b> and up to <b>18 lakh calculations/minute</b> without any increase in cost.",
+      "Increased commission module's capacity to handle up to <b>100 txn/sec</b> and up to <b>500 calculations/sec</b> without any increase in cost.",
       'Promoted to devops champion for managing infra for microservices using <b>Spinnaker, Terraform and Kubernetes.</b>',
     ],
   },
