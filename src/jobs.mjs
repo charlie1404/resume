@@ -4,7 +4,7 @@ const jobsData = [
     company: 'Razorpay Software Private Limited',
     location: 'Bengaluru, KA',
     from: 'Oct, 2022',
-    to: 'Present',
+    to: 'May, 2024',
     logo: 'razorpay',
     bullets: [
       'Built <a href="https://razorpay.com/blog/revolutionizing-financial-reconciliation-with-razorpay-recon/">Recon as SaaS</a> from scratch <b>(in Golang)</b> with multi-tenancy support to provide recon capabilities to customers.',
