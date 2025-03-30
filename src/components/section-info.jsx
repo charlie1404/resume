@@ -5,9 +5,9 @@ const TitleLine = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
 
   & p.left {
     font-weight: bold;
@@ -29,7 +29,7 @@ const Bullets = styled.ul`
   & li {
     text-align: justify;
     margin-top: 2px;
-    font-size: 13.5px;
+    font-size: 13px;
     line-height: 1.2;
   }
 `;
@@ -61,7 +61,7 @@ function Information(props) {
       {bullets && bullets.length > 0 && (
         <Bullets>
           {bullets.map((e, i) => (
-            <li key={i} dangerouslySetInnerHTML={{ __html: e }} />
+            <li style={{ marginTop: '4px' }} key={i} dangerouslySetInnerHTML={{ __html: e }} />
           ))}
         </Bullets>
       )}
@@ -70,8 +70,8 @@ function Information(props) {
 }
 
 const LinedInformationLine = styled.div`
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.3;
   &:first-of-type {
     margin-top: 8px;
   }

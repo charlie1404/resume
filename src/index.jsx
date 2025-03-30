@@ -5,7 +5,7 @@ import { Global, css } from '@emotion/react';
 import Header from './components/header';
 import ResumeSection from './components/section';
 import { Information, LinedInformation, SocialLinkHref } from './components/section-info';
-import { RazorpayLogo, VimeoLogo, PeakLogo } from './components/logos';
+import { RazorpayLogo, VimeoLogo, PeakLogo, DeelLogo } from './components/logos';
 
 import jobsData, { internshipData } from './jobs.mjs';
 import projectsData from './projects.mjs';
@@ -49,6 +49,7 @@ const logoMap = {
   razorpay: <RazorpayLogo />,
   vimeo: <VimeoLogo />,
   peak: <PeakLogo />,
+  deel: <DeelLogo />,
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

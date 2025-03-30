@@ -24,7 +24,7 @@ function Header() {
       <HeaderTitleH1>Shailendra Gupta</HeaderTitleH1>
       <HeaderDesc>
         <i className="fa fa-phone-square" />
-        &nbsp;&nbsp;+91 9602425641&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;+91-9602425641&nbsp;&nbsp;&nbsp;
         <span className="bold">|&nbsp;&nbsp;</span>
         &nbsp;
         <i className="fa fa-envelope" />

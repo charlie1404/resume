@@ -1,6 +1,12 @@
-import core from '@actions/core';
+// import core from '@actions/core';
 import puppeteer from 'puppeteer';
 import { build, preview } from 'vite';
+
+const core = {
+  info: console.log,
+  error: console.error,
+  setFailed: console.error,
+};
 
 let server = null;
 let browser = null;
