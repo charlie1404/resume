@@ -121,13 +121,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         rightToLine="Jaipur, RJ"
       />
     </ResumeSection>
-    <ResumeSection title="Certifications">
-      <Information
-        leftTitle="AWS Developer Associate"
-        rightToTitle="12th Aug, 2019"
-        leftLine="PWYQS9G1MFE11RSL"
-      />
-    </ResumeSection>
     <ResumeSection title="Honors & Awards">
       <Information
         leftTitle="Razorpay Spot Award"
@@ -145,6 +138,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         leftLine="Smart India Hackathon"
       />
     </ResumeSection>
+    <br />
+    <ResumeSection title="Certifications">
+      <Information
+        leftTitle="AWS Developer Associate"
+        rightToTitle="12th Aug, 2019"
+        leftLine="PWYQS9G1MFE11RSL"
+      />
+    </ResumeSection>
+    <br />
     <ResumeSection title="Social Links">
       <SocialLinkHref href="https://github.com/charlie1404">
         &emsp;<i className="fa fa-github"></i>
